@@ -1,13 +1,31 @@
-body{
+body {
     margin: 0;
     padding: 0;
-}
-#container{
-    max-width: 1440px;
-    display: block;
-    margin: auto;
+    height: 100vh;
+
 }
 
-#top{
-    display: block;
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1440px;
+}
+
+#top {
+    order: 1;
+    height: 56px;
+    background-color: blue;
+}
+
+#main {
+    order: 2;
+    background-color: brown;
+    height: calc(100vh - 56px - 100px);
+}
+
+#bottom {
+    order: 3;
+    height: 100px;
+    background-color: blueviolet;
 }
