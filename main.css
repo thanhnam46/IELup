@@ -19,6 +19,7 @@ body {
     justify-content: space-between;
     width: 100%;
     position: fixed;
+    border-bottom: solid 1px #D0D1D3;
 }
 
 .top_container {
@@ -61,8 +62,9 @@ body {
 }
 
 .slide1_container {
-    background: rgb(253, 144, 43);
-    /* background: linear-gradient(180deg, rgba(253, 144, 43, 1) 0%, rgba(253, 144, 43, 1) 50%, rgba(208, 209, 211, 1) 100%); */
+    background: #fd902b;
+    background-image: url("./media/img/background.jpg");
+    background-size: cover;
 }
 
 .main_slide_1 {
@@ -82,25 +84,54 @@ body {
 }
 
 .slide1_text1 {
-    margin-top: 70px;
+    margin-top: 45px;
     border-radius: 10px;
     text-align: center;
-    padding: 0 100px 0 100px;
-    background: rgb(103, 63, 64);
-    background: radial-gradient(circle, rgba(103, 63, 64, 1) 0%, rgba(103, 63, 64, 1) 50%, rgba(253, 144, 43, 1) 100%);
+    padding: 5px 100px 5px 100px;
+    background: rgb(0, 0, 0, 0.3);
+    /* background: radial-gradient(circle, rgba(103, 63, 64, 1) 0%, rgba(103, 63, 64, 1) 50%, rgba(253, 144, 43, 1) 100%); */
 }
 
 .slide1_desc {
     margin-top: 20px;
     border-radius: 10px;
     text-align: center;
-    padding: 0 100px 0 100px;
-    background: rgb(103, 63, 64);
-    background: radial-gradient(circle, rgba(103, 63, 64, 1) 0%, rgba(103, 63, 64, 1) 50%, rgba(253, 144, 43, 1) 100%);
+    padding: 5px 100px 5px 100px;
+    background: rgb(0, 0, 0, 0.3);
+    /* background: radial-gradient(circle, rgba(103, 63, 64, 1) 0%, rgba(103, 63, 64, 1) 50%, rgba(253, 144, 43, 1) 100%); */
+}
+
+.slide1_text a {
+    height: 40px;
+    font-size: 1.6rem;
+    transition-duration: 0.4s;
+    margin-top: 20px;
+    border: #DD052B solid 1px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #673F40;
+    background-color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.slide1_text a:hover {
+    background-color: #DD052B;
+    cursor: pointer;
+    color: #fff;
 }
 
 .slide1_img {
     width: 40%;
+    align-items: center;
+    display: flex;
+}
+
+.slide1_img svg {
+    height: 500px;
+    /* stroke: #fd902b; */
+    fill: rgb(0, 0, 0, 0.3);
+    margin: auto;
 }
 
 /* End of Main_Slide1 start ò Main_Slide2 */
@@ -110,7 +141,7 @@ body {
 }
 
 .main_slide_2 {
-    height: 900px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     width: 1140px;
@@ -127,7 +158,103 @@ body {
     padding: 0 200px 0 200px;
 }
 
+.slide2_table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 40px;
+}
 
+.slide2_bullet {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+    margin: 0 15px 0 15px;
+    border: #DD052B 1px solid;
+    border-radius: 10px;
+    color: #673F40;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.slide2_bullet svg {
+    fill: none;
+    stroke: #DD052B;
+    stroke-width: 5px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+/* End of slide 2, start slide 3 */
+.slide3_container {
+    display: flex;
+    padding-bottom: 260px;
+    background-color: #FDD652;
+}
+
+.main_slide_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+
+.slide3_title {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-top: 70px;
+    background: rgb(103, 63, 64);
+    background: radial-gradient(circle, rgba(103, 63, 64, 1) 0%, rgba(103, 63, 64, 1) 50%, rgba(253, 214, 82, 1) 100%);
+    padding: 0 200px 0 200px;
+}
+
+.slide3_guide_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slide3_guide1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide3_guide1 svg{
+    margin-top: 20px;
+    fill: #ffffff;
+    stroke: #673F40;
+    stroke-width: 10px;
+    height: 50px;
+}
+
+.slide3_circle{
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #ffffff;
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(103,63,64,0.5);
+}
+
+.slide3_circle a{
+    text-decoration: none;
+    color: #DD052B;
+    
+}
+
+.guide_text{
+    margin: auto;
+}
+
+/* End of slide 3, start footer */
 
 #footer {
     order: 3;
@@ -197,6 +324,13 @@ body {
     }
 }
 
-.footer_text {
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1140px;
+    margin: auto;
+    align-items: center;
     color: #ffffff;
+    padding-top: 20px;
 }
